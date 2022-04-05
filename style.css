@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  background: var(--background);
+  display: flex;
+  justify-content: center;
+}
+header {
+  margin-top: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.loginHeader + p {
+  margin-bottom: 1.69rem;
+}
+#EmailContainer {
+  margin-bottom: 1.25rem;
+}
+#PasswordContainer {
+  margin-bottom: 1.25rem;
+}
+.loginHeader {
+  display: flex;
+  color: var(--text-title);
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2.25rem;
+  margin-bottom: 0.32rem;
+}
+.loginHeader > img {
+  margin-right: 0.63rem;
+}
+
+.loginHeader + p {
+  color: var(--text-base);
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+.RemindMe {
+  width: 20px;
+  height: 20px;
+  border: 1px solid hsla(0, 0%, 52%, 1);
+  border-radius: 4px;
+  background: var(--form-background);
+}
+.RemindMe + p {
+  color: var(--text-base);
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.19rem;
+  margin-right: 3.5rem;
+}
+input {
+  width: 335px;
+  height: 44px;
+  border: 1px solid hsla(0, 0%, 52%, 1);
+  border-radius: 4px;
+  background: var(--form-background);
+  outline: none;
+}
+.RemindMe + p + a {
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+label {
+  color: var(--text-base);
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+  margin-bottom: 0.3125rem;
+}
+input::placeholder {
+  color: var(--text-base);
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1rem;
+}
+.yellow {
+  color: var(--primary-color);
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+}
+span {
+  font-weight: bold;
+}
+#InputEmail,
+#InputPassword {
+  display: block;
+  padding-left: 37px;
+  padding-right: 37px;
+}
+.LoginContent p {
+  display: inline;
+}
+
+.Login {
+  display: block;
+  margin-top: 1.25rem;
+  margin-bottom: 0.875rem;
+  width: 334px;
+  height: 51px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.015em;
+  border-radius: 4px;
+  background: var(--primary-color);
+  border: 0;
+}
+.Login a {
+  color: black;
+}
+:root {
+  --text-base: #afb6c2;
+  --text-title: #d4ccb6;
+  --background: #191816;
+  --form-background: #24221f;
+  --primary-color: #ffc632;
+}
+.centralization {
+  display: flex;
+  width: 335px;
+  justify-content: center;
+}
+.RemindMeSet {
+  display: inline;
+}
+.RemindMeSet button {
+  vertical-align: -2px;
+}
+#InputEmail {
+  background-image: url(./Assets/mail.svg);
+  background-repeat: no-repeat;
+  background-position: 12px;
+}
+#InputPassword {
+  background-image: url(./Assets/lock.svg);
+  background-repeat: no-repeat;
+  background-position: 12px;
+}
+
+#PasswordContainer {
+  position: relative;
+}
+#InputPassword + img {
+  position: absolute;
+  top: 36px;
+  right: 15px;
+}
+#InputEmail:focus-within {
+  background-image: url(./Assets/mail-focus.svg);
+  border: 3px solid var(--primary-color);
+  outline: none;
+}
+#InputPassword:focus-within {
+  background-image: url(./Assets/lock-focus.svg);
+  border: 3px solid var(--primary-color);
+  outline: none;
+}
+.RemindMe:focus-within {
+  background: var(--primary-color);
+  background-image: url(./Assets/check.svg);
+  background-position: center;
+}
+.imgHidable {
+  visibility: hidden;
+}
+.mainContainer {
+  height: 25rem;
+  width: 21rem;
+  display: flex;
+  justify-items: center;
+}
+@media (min-width: 610px) {
+  main {
+    width: 35.75rem;
+    height: 32rem;
+    background: var(--form-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+  }
+  header {
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .mainContainer {
+    width: 100%;
+    height: 92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    margin-right: 0;
+  }
+}
+@media (min-width: 1300px) {
+  main,
+  header {
+    width: 50vw;
+  }
+  .imgHidable {
+    visibility: visible;
+    background-image: url(./Assets/side-image-altura-correta.jpg);
+    background-repeat: no-repeat;
+    background-size: cover center;
+    height: 100vh;
+    width: 60rem;
+  }
+  main {
+    width: 35.75rem;
+  }
+}
+@media (min-width: 1605px) {
+  .mainContainer {
+    width: 59vw;
+  }
+  header {
+    width: 100%;
+  }
+}

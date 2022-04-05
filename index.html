@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="header">
+          <img src="./Assets/logo.svg" alt="" />
+        </div>
+      </header>
+      <div class="mainContainer">
+        <main>
+          <div class="LoginContainer">
+            <div class="loginHeader">
+              <img src="./Assets/log-in.svg" alt="" />
+              <h1>Faça seu login</h1>
+            </div>
+            <p>Entre com suas informações de cadastro.</p>
+            <div class="LoginContent">
+              <form action="">
+                <div id="EmailContainer">
+                  <label for="InputEmail">E-mail</label>
+                  <input
+                    id="InputEmail"
+                    type="email"
+                    name="email"
+                    placeholder="Digite seu e-mail"
+                  />
+                </div>
+                <div id="PasswordContainer">
+                  <label for="InputPassword">Senha</label>
+                  <input
+                    type="password"
+                    id="InputPassword"
+                    placeholder="Digite sua senha"
+                  />
+                  <img src="./Assets/eye.svg" alt="" />
+                </div>
+              </form>
+              <div class="RemindMeSet">
+                <button class="RemindMe"></button>
+                <p>Lembre-me</p>
+              </div>
+              <a class="yellow" href="">Esqueci minha senha</a>
+              <button class="Login"><a href="">ENTRAR</a></button>
+              <div class="centralization">
+                <a class="yellow" href=""
+                  >Não tem uma conta?<span> Registre-se</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <div class="imgHidable"></div>
+  </body>
+</html>
