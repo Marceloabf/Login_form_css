@@ -1,3 +1,4 @@
+/* You can add global styles to this file, and also import other style files */
 * {
   margin: 0;
   box-sizing: border-box;
@@ -138,12 +139,12 @@ span {
   vertical-align: -2px;
 }
 #InputEmail {
-  background-image: url(./Assets/mail.svg);
+  background-image: url(../public/assets/mail.svg);
   background-repeat: no-repeat;
   background-position: 12px;
 }
 #InputPassword {
-  background-image: url(./Assets/lock.svg);
+  background-image: url(../public/assets/lock.svg);
   background-repeat: no-repeat;
   background-position: 12px;
 }
@@ -157,18 +158,18 @@ span {
   right: 15px;
 }
 #InputEmail:focus-within {
-  background-image: url(./Assets/mail-focus.svg);
+  background-image: url(../public/assets/mail-focus.svg);
   border: 3px solid var(--primary-color);
   outline: none;
 }
 #InputPassword:focus-within {
-  background-image: url(./Assets/lock-focus.svg);
+  background-image: url(../public/assets/lock-focus.svg);
   border: 3px solid var(--primary-color);
   outline: none;
 }
 .RemindMe:focus-within {
   background: var(--primary-color);
-  background-image: url(./Assets/check.svg);
+  background-image: url(../public/assets/check.svg);
   background-position: center;
 }
 .imgHidable {
@@ -213,7 +214,7 @@ span {
   }
   .imgHidable {
     visibility: visible;
-    background-image: url(./Assets/side-image-altura-correta.jpg);
+    background-image: url(../public/assets/side-image-altura-correta.jpg);
     background-repeat: no-repeat;
     background-size: cover center;
     height: 100vh;
